@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Flask Web</title></head>
+<body>
+  <h1>Hello from Flask!</h1>
+  <form method="POST">
+    <input type="text" name="message" placeholder="Talk to Python">
+    <button type="submit">Send</button>
+  </form>
+  {% if response %}
+    <p>Python says: {{ response }}</p>
+  {% endif %}
+</body>
+</html>
